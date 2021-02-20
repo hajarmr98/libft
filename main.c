@@ -6,7 +6,7 @@
 /*   By: hmrabet- <hmrabet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 15:54:59 by hmrabet-          #+#    #+#             */
-/*   Updated: 2021/01/24 17:31:15 by hmrabet-         ###   ########.fr       */
+/*   Updated: 2021/02/20 21:12:10 by hmrabet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,15 @@
 #include <string.h>
 
 int main(){
-	const char *str;
-	// char dest[] = "Hola soy la cadena más larga que se me ha podido ocurrir";
-	// const char src[] = "hey soul sis";
+	// const char *str;
 
-	str = "Whcat can make me feel this Way";
+	// char st[] = "This is my modifiable string";
+	
+	char dest[] = "Hola soy la cadena más larga que se me ha podido ocurrir";
+	char src[] = "hey soul wsis";
+	// char src[] = "Hola soy la cadena más larga que se me ha podido ocurrir";
+
+	// str = "Whcat can make me feel this Way";
 
 	// str = "  -+123440HCHBD345678";
 
@@ -65,8 +69,35 @@ int main(){
 	// printf("%c\n", toupper('%'));
 	// printf("%c\n", ft_toupper('%'));
 
-	printf("%c\n", tolower('a'));
-	printf("%c\n", ft_tolower('a'));
+	// printf("%c\n", tolower('a'));
+	// printf("%c\n", ft_tolower('a'));
+
+	// void *
+    //  memset(void *b, int c, size_t len);
+
+	// printf("%s\n", memset(st, 35, 15));
+	// printf("%s\n", ft_memset(st, 35, 15));
+	// printf("%s\n", st);
+
+	// printf("%s\n", bzero(st, 15));
+	// printf("%s\n", ft_bzero(st, 15));
+	// printf("%s\n", dest);
+	// printf("%s\n", memcpy(&dest[0], &dest[5], 10));
+	// printf("%s\n", ft_memcpy(dest, src, 2));
+
+	// printf("%s\n", memccpy(dest, src, 'w' , 4));
+	// printf("%s\n", ft_memccpy(dest, src, 'w' , 4));
+
+	//printf("%s\n", memmove(&dest[5], &dest[6], 10));
+	//printf("%s\n", ft_memmove(&dest[5], &dest[6], 10));
+
+	// printf("%s\n", memchr(dest, 'c', 10));
+	// printf("%s\n", ft_memchr(dest, 'c', 10));
+	
+	// printf("%d\n", calloc(8, 8));
+	// printf("%p\n", ft_calloc(8, 8));
+
+	printf("%s\n", ft_strdup("Fix you"));
 
    return 0;
 }
