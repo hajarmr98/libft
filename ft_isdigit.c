@@ -6,11 +6,14 @@
 /*   By: hmrabet- <hmrabet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/24 16:37:08 by hmrabet-          #+#    #+#             */
-/*   Updated: 2021/01/24 16:44:01 by hmrabet-         ###   ########.fr       */
+/*   Updated: 2021/05/02 12:06:19 by hmrabet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-	return ((47 < c) && (c < 58) ? 1 : 0);
+	if ((47 < c) && (c < 58))
+		return (1);
+	else
+		return (0);
 }

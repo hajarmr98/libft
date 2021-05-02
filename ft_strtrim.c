@@ -6,7 +6,7 @@
 /*   By: hmrabet- <hmrabet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 12:37:08 by hmrabet-          #+#    #+#             */
-/*   Updated: 2021/04/25 13:21:35 by hmrabet-         ###   ########.fr       */
+/*   Updated: 2021/05/02 18:59:41 by hmrabet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (0);
 	i = ft_loop1(s1, set);
 	len = ft_loop2(s1, set, len);
-	new = ft_substr((char *)s1, i, (len - i));
+	if ((len - i) != 0)
+		new = ft_substr((char *)s1, i, (len - i));
+	else
+		new = ft_substr((char *)s1, 0, 0);
 	return (new);
 }

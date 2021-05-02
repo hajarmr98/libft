@@ -6,11 +6,14 @@
 /*   By: hmrabet- <hmrabet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/24 16:51:59 by hmrabet-          #+#    #+#             */
-/*   Updated: 2021/01/24 16:52:28 by hmrabet-         ###   ########.fr       */
+/*   Updated: 2021/05/02 13:05:44 by hmrabet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isascii(int c)
+int	ft_isascii(int c)
 {
-	return ((0 < c) && (c < 127) ? 1 : 0);
+	if ((0 <= c) && (c <= 127))
+		return (1);
+	else
+		return (0);
 }

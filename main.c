@@ -6,25 +6,35 @@
 /*   By: hmrabet- <hmrabet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/23 15:54:59 by hmrabet-          #+#    #+#             */
-/*   Updated: 2021/02/20 21:12:10 by hmrabet-         ###   ########.fr       */
+/*   Updated: 2021/05/02 18:49:36 by hmrabet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
 
+char ft_funcion(unsigned int po, char lo)
+{
+	printf("%i\n", po);
+	printf("%i\n", po + lo);
+	return (po + lo);
+}
+
 int main(){
 	// const char *str;
 
 	// char st[] = "This is my modifiable string";
 	
-	char dest[] = "Hola soy la cadena más larga que se me ha podido ocurrir";
-	char src[] = "hey soul wsis";
+	// char dest[] = "Hola soy la cadena más larga";
+	// char src[] = "hey soul wsis";
+	char	*dest;
+	memset(dest, 'r', 6);
+	dest[14] = 'a';
 	// char src[] = "Hola soy la cadena más larga que se me ha podido ocurrir";
 
 	// str = "Whcat can make me feel this Way";
 
-	// str = "  -+123440HCHBD345678";
+	// str = "  --123440HCHBD345678";
 
 	// printf("%lu\n", ft_strlen(str));
 	// printf("%lu\n", strlen(str));
@@ -32,14 +42,15 @@ int main(){
 	// printf("%lu\n", strlcpy(dest, src, 8));
 	// printf("%lu\n", ft_strlcpy(dest, src, 8));
 
-	// printf("%lu\n", ft_strlcat(dest, src, 8));
-	// printf("%lu\n", strlcat(dest, src, 8));
+	// printf("%lu\n", ft_strlcat(dest, "lorem ipsum dolor sit amet", 15));
+	// printf("%lu\n", strlcat(dest, "lorem ipsum dolor sit amet", 15));
+	// printf("%s\n", dest);
 
 	// printf("%p\n", ft_strchr(str, 'W'));
 	// printf("%p\n", strchr(str, 'W'));
 
-	// printf("%s\n", ft_strrchr(str, 'W'));
-	// printf("%s\n", strrchr(str, 'W'));
+	// printf("%s\n", ft_strrchr("bonjour", 's'));
+	// printf("%s\n", strrchr("bonjour", 's'));
 
 	// printf("%s\n", ft_strnstr(str, "can", 8));
 	// printf("%s\n",strnstr(str, "can", 8));
@@ -47,8 +58,8 @@ int main(){
 	// printf("%i\n", ft_atoi(str));
 	// printf("%i\n", atoi(str));
 
-	// printf("%i\n", ft_strncmp(dest, src, 8));
-	// printf("%i\n", strncmp(dest, src, 8));
+	// printf("%i\n", ft_strncmp("test\200", "test\0", 6));
+	// printf("%i\n", strncmp("test\200", "test\0", 6));
 
 	// printf("%i\n", isalpha('M'));
 	// printf("%i\n", ft_isalpha('M'));
@@ -85,8 +96,8 @@ int main(){
 	// printf("%s\n", memcpy(&dest[0], &dest[5], 10));
 	// printf("%s\n", ft_memcpy(dest, src, 2));
 
-	// printf("%s\n", memccpy(dest, src, 'w' , 4));
-	// printf("%s\n", ft_memccpy(dest, src, 'w' , 4));
+	// printf("%s\n", memccpy(dest, src, 's' , 5));
+	// printf("%s\n", ft_memccpy(dest, src, 's' , 5)); 
 
 	//printf("%s\n", memmove(&dest[5], &dest[6], 10));
 	//printf("%s\n", ft_memmove(&dest[5], &dest[6], 10));
@@ -94,10 +105,45 @@ int main(){
 	// printf("%s\n", memchr(dest, 'c', 10));
 	// printf("%s\n", ft_memchr(dest, 'c', 10));
 	
+	// int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
+	
+	// printf("%s\n", memchr(tab, -1, 7));
+	// printf("%s\n", ft_memchr(tab, -1, 7));
+	
 	// printf("%d\n", calloc(8, 8));
 	// printf("%p\n", ft_calloc(8, 8));
 
-	printf("%s\n", ft_strdup("Fix you"));
+	// printf("%s\n", ft_strdup("Fix you"));
 
-   return 0;
+	// printf("%s", ft_substr("Hola quiero helado", 5, 6));
+
+	// printf("%s", ft_strjoin("Hola quiero helado", "Y no tengo"));
+
+	printf("%s", ft_strtrim("aaaaaa", "\ta\n"));
+
+	// char **res = ft_split("eHoeeela qeeeuieero heladoe", 'e');
+	// printf("%s\n", res[0]);
+	// printf("%s\n", res[1]);
+	// printf("%s\n", res[2]);
+	// printf("%s\n", res[3]);
+	// printf("%s\n", res[4]);
+	// ft_itoa(123);
+
+	// printf("%s", ft_itoa(-123));
+
+	// printf("%s", ft_strmapi("hola me llamo lola", &ft_funcion));
+
+	// printf("%s", ft_strmapi("hola me llamo lola", &ft_funcion));
+	
+	
+
+	// ft_putchar_fd('c', 1);
+
+	// ft_putstr_fd("los chulos llevan motorola", 1);
+
+	// ft_putendl_fd("los chulos llevan motorola", 1);
+
+	// ft_putnbr_fd(-1526, -1);
+
+   	return (0);
 }

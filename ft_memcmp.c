@@ -6,13 +6,13 @@
 /*   By: hmrabet- <hmrabet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/20 20:27:06 by hmrabet-          #+#    #+#             */
-/*   Updated: 2021/02/20 20:32:56 by hmrabet-         ###   ########.fr       */
+/*   Updated: 2021/05/02 12:21:25 by hmrabet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t			i;
 	unsigned char	*news1;

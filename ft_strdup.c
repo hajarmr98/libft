@@ -6,7 +6,7 @@
 /*   By: hmrabet- <hmrabet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/20 21:03:04 by hmrabet-          #+#    #+#             */
-/*   Updated: 2021/02/20 21:31:05 by hmrabet-         ###   ########.fr       */
+/*   Updated: 2021/05/02 12:24:07 by hmrabet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char	*ft_strdup(const char *s1)
 
 	i = 0;
 	len = ft_strlen(s1);
-	if (!(new = malloc(len + 1)))
+	new = malloc(len + 1);
+	if (!new)
 		return (0);
 	while (s1[i] != '\0')
 	{

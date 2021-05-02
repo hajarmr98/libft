@@ -6,13 +6,13 @@
 /*   By: hmrabet- <hmrabet-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/24 17:15:11 by hmrabet-          #+#    #+#             */
-/*   Updated: 2021/01/24 17:23:34 by hmrabet-         ###   ########.fr       */
+/*   Updated: 2021/05/02 12:14:27 by hmrabet-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_toupper(int c)
+int	ft_toupper(int c)
 {
-	if((96 < c) && (c < 123))
+	if ((96 < c) && (c < 123))
 		return (c - 32);
 	else
 		return (c);
